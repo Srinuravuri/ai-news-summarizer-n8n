@@ -61,7 +61,7 @@ Each run appends one row with these columns:
    - **Google Sheets**: in the *Save to Google Sheets* node, connect a new *Google Sheets OAuth2* credential and replace `YOUR_SPREADSHEET_ID` with the ID of your spreadsheet (the part of the URL after `/d/`).
 
 3. **Activate the workflow**
-   - Toggle the workflow to **Active**. It will run every morning at 08:00.
+   - Toggle the workflow to **Active**. It will run every morning at 08:00. To run at a different time, adjust the *Schedule Trigger* node.
 
 ## Project structure
 
@@ -73,19 +73,12 @@ ai-news-summarizer-n8n/
 │
 ├── screenshots/
 │   ├── workflow.png              # workflow canvas
-│   ├── google-sheet.png          # spreadsheet output
-│   └── execution.png             # execution/run view
+│   └── google-sheet.png          # spreadsheet output
 │
 ├── README.md
 ├── LICENSE
 └── .gitignore
 ```
-
-## Notes
-
-- API keys are **not** included in this repository. Add your own after importing.
-- The schedule is set to `0 8 * * *` (daily 08:00). Change it in the *Schedule Trigger* node if your morning routine differs.
-- Free NewsAPI tier works for development; production use may require a paid plan.
 
 ## License
 
