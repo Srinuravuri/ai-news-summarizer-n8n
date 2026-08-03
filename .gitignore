@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Environment files (never commit keys)
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# n8n local storage
+.n8n/
